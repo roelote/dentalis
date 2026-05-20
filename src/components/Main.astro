@@ -1,0 +1,37 @@
+---
+import heroDentist from "../assets/hero-dentist.png";
+---
+
+<main>
+  <section>
+    <div
+      class="w-full min-h-screen bg-amber-100 flex items-center justify-center"
+    >
+      <div class="container py-10">
+        <div class="flex items-center gap-10 flex-col lg:flex-row">
+          <div>
+            <span
+              class="text-primary text-xs font-medium flex items-center gap-2 before:content-[''] before:w-[50px] before:h-[1px] before:bg-[#CA982D]"
+            >
+              Clinica dentista premiun • Cusco
+            </span>
+            <h1 class="text-3xl md:text-7xl font-bold text-slate-800 leading-[1.2] my-4 text-wrap md:text-nowrap">
+              Sabias que <span class="block text-primary"
+                >Inspiran Confianza</span
+              >
+            </h1>
+            <p class="text-base text-gray-700 max-w-4xl">En Lumina Dental combinamos tecnología de vanguardia con un trato humano excepcional para cuidar tu sonrisa con el detalle que mereces.</p>
+            <div class="mt-5 flex items-center gap-5">
+                <a href="" class="text-base inline-flex items-center gap-2 bg-primary text-white px-9 py-3 rounded-2xl hover:bg-[#CA982D] transition-colors">Agendar Cita <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg></a>
+                <a href="" class="text-base inline-block border border-slate-800 text-white px-9 py-3 rounded-2xl bg-slate-800 transition-colors">Conocer Servicios</a>
+            </div>
+          </div>
+          <div class="relative">
+              <div class="absolute bottom-0 right-0 w-[200px] h-[200px] rounded-full bg-primary/20 blur-3xl z-40">+ 200 <span class="block">Pacientes felices</span></div>
+            <img src={heroDentist.src} alt="" class="z-10" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

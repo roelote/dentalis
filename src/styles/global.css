@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer components {
+  .container {
+    @apply mx-auto px-5;
+  }
+}
+
+@layer utilities {
+  .text-primary {
+    @apply text-[#CA982D];
+  }
+
+  .bg-primary {
+    @apply bg-[#CA982D];
+  }
+
+  .text-base {
+    @apply text-[14px];
+  }
+}
+
+@media (width >= 96rem) {
+  .container {
+    max-width: 1400px !important;
+  }
+}
