@@ -1,11 +1,15 @@
 ---
 import heroDentist from '../assets/hero-dentist.png';
+import img1 from '../assets/img1.png';
+import img2 from '../assets/img2.png';
+import img3 from '../assets/img3.png';
+import gruion from '../assets/guion.png';
 import Services from './Services.astro';
 ---
 
 <main>
     <section>
-        <div class="w-full min-h-screen bg-amber-100 flex items-center justify-center">
+        <div class="w-full min-h-screen bg-amber-50 flex items-center justify-center">
             <div class="container py-10">
                 <div class="flex items-center gap-10 flex-col lg:flex-row">
                     <div>
@@ -14,13 +18,13 @@ import Services from './Services.astro';
                             Sabias que <span class="block text-primary">Inspiran Confianza</span>
                         </h1>
                         <p class="text-base text-gray-700 max-w-4xl">En Lumina Dental combinamos tecnología de vanguardia con un trato humano excepcional para cuidar tu sonrisa con el detalle que mereces.</p>
-                        <div class="mt-5 flex items-center gap-5">
-                            <a href="" class="text-base inline-flex items-center gap-2 bg-primary text-white px-9 py-3 rounded-2xl hover:bg-[#CA982D] transition-colors font-medium">Agendar Cita <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg></a>
-                            <a href="" class="text-base inline-block border border-slate-800 text-white px-9 py-3 rounded-2xl bg-slate-800 transition-colors font-medium">Conocer Servicios</a>
+                        <div class="mt-5 flex items-center flex-col lg:flex-row gap-5">
+                            <a href="" class="text-medium lg:text-base inline-flex justify-center items-center gap-2 bg-primary text-white w-full lg:w-max lg:px-9 text-center py-3 rounded-2xl hover:bg-[#CA982D] transition-colors font-medium">Agendar Cita <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right"><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg></a>
+                            <a href="" class="text-medium lg:text-base inline-flex justify-center  border border-slate-800 text-white w-full lg:w-max lg:px-9 text-center py-3 rounded-2xl bg-slate-800 transition-colors font-medium">Conocer Servicios</a>
                         </div>
                     </div>
                     <div class="relative">
-                        <div class="absolute shadow-2xl -bottom-5 -left-10 bg-white p-3 rounded-2xl">
+                        <div class="absolute shadow-2xl -bottom-5 left-0 lg:-left-10 bg-white p-3 rounded-2xl">
                             <div class="flex items-center gap-3">
                                 <div>
                                     <div class="bg-amber-500 p-3 rounded-full">
@@ -33,29 +37,255 @@ import Services from './Services.astro';
                                 </div>
                             </div>
                         </div>
-                        <img src={heroDentist.src} alt="" class="z-10 shadow-2xl rounded-[40px]" />
+                        <img decoding="async" fetchpriority="high" src={heroDentist.src} alt="" class="z-10 shadow-2xl rounded-[40px]" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="container py-16">
-            <div class="flex items-center gap-5 justify-between">
-                <div>
+        <div class="container py-16 overflow-hidden" id="servicios">
+            <div class="flex flex-col lg:flex-row items-center gap-10 justify-between">
+                <div class="w-full lg:w-1/2">
                     <span class="text-primary text-xs font-medium flex items-center gap-2 before:content-[''] before:w-[50px] before:h-[1px] before:bg-[#CA982D]"> Clinica dentista premiun • Cusco </span>
-                    <h1 class="text-3xl md:text-5xl font-bold text-slate-800 leading-[1.2] my-4 text-wrap md:text-nowrap">
+                    <h2 class="text-3xl md:text-5xl font-bold text-slate-800 leading-[1.2] my-4">
                         Sabias que <span class="block text-primary">Inspiran Confianza</span>
-                    </h1>
+                    </h2>
                     <p class="text-base text-gray-700 max-w-2xl">En Lumina Dental combinamos tecnología de vanguardia con un trato humano excepcional para cuidar tu sonrisa con el detalle que mereces.</p>
                 </div>
-                <div class="overflow-hidden">
-                    <Services/>
+
+                <div class="w-full lg:w-1/2 min-w-0">
+                    <Services />
                 </div>
             </div>
         </div>
     </section>
+    <section>
+        <div class="w-full bg-amber-50 py-16 overflow-hidden">
+            <div class="container">
+                <div class="flex flex-col lg:flex-row gap-10 items-center justify-between">
+                    <div class="grow w-full lg:w-125">
+                        <span class="text-primary text-xs font-medium flex items-center gap-2 before:content-[''] before:w-[50px] before:h-[1px] before:bg-[#CA982D]"> Clinica dentista premiun • Cusco </span>
+                        <h2 class="text-3xl md:text-5xl font-bold text-slate-800 leading-[1.2] my-4">
+                            Diseñado para tu <span class="block text-primary">bienestar</span>
+                        </h2>
+                        <p class="text-base text-gray-700 max-w-2xl">En Lumina Dental combinamos tecnología de vanguardia con un trato humano excepcional para cuidar tu sonrisa con el detalle que mereces.</p>
+                    </div>
+                    <div class="grow w-full lg:w-125">
+                        <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti neque perspiciatis aperiam tempora voluptatibus cumque distinctio, fuga voluptatum inventore deleniti dolor exercitationem iure pariatur beatae recusandae ratione magni. Dolorem, magnam.</p>
+                    </div>
+                </div>
+                <div class="my-10">
+                    <div class="grid grid-cols-6 gap-5 my-5">
+                        <div class="col-span-6 lg:col-span-4 rounded-3xl overflow-hidden shadow-2xl relative group">
+                            <img class="w-full h-full lg:h-87.5 object-cover object-center transition-transform duration-300 group-hover:scale-110" src={img1.src} alt="" />
+                            <div class="absolute inset-0 bg-linear-to-t from-slate-700 to-transparent opacity-70"></div>
+                            <div class="absolute left-8 bottom-8 z-50">
+                                <p class="block text-primary text-lg font-medium">01 — Consulta</p>
+                                <p class="block text-gray-200 text-xl font-semibold tracking-wide text-balance">Sala de Tratamiento</p>
+                            </div>
+                        </div>
+                        <div class="col-span-6 lg:col-span-2 rounded-3xl overflow-hidden relative group">
+                            <img class="w-full h-full lg:h-87.5 object-cover object-center transition-transform duration-300 group-hover:scale-110" src={img2.src} alt="" />
+                            <div class="absolute inset-0 bg-linear-to-t from-slate-700 to-transparent opacity-70"></div>
+                            <div class="absolute left-8 bottom-8 z-50">
+                                <p class="block text-primary text-lg font-medium">02 — Recepeción</p>
+                                <p class="block text-gray-200 text-xl font-semibold tracking-wide text-balance">Espacio de Bienvenida</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-6 gap-5 my-5">
+                        <div class="col-span-6 lg:col-span-2 rounded-3xl overflow-hidden relative group">
+                            <img class="w-full h-full lg:h-87.5 object-cover object-center transition-transform duration-300 group-hover:scale-110" src={img3.src} alt="" />
+                            <div class="absolute inset-0 bg-linear-to-t from-slate-700 to-transparent opacity-70"></div>
+                            <div class="absolute left-8 bottom-8 z-50">
+                                <p class="block text-primary text-lg font-medium">03 — Tegnologia</p>
+                                <p class="block text-gray-200 text-xl font-semibold tracking-wide text-balance">Equipos de última generación</p>
+                            </div>
+                        </div>
+                        <div class="col-span-6 lg:col-span-4 rounded-3xl overflow-hidden">
+                            <div class="w-full h-full lg:h-87.5 bg-slate-800 p-10 flex items-start justify-center flex-col shadow-2xl">
+                                <p class="text-primary font-bold text-lg mb-3">Compromiso</p>
+                                <h3 class="text-gray-200 text-lg text-pretty">Esterilización certificada y protocolos de seguridad a nivel hospitalario.</h3>
+                                <div class="w-full h-px bg-gray-600 block my-7"></div>
+                                <div class="flex flex-col w-full lg:flex-row items-center justify-center lg:justify-start gap-10">
+                                    <div class="text-center">
+                                        <p class="text-3xl text-primary font-bold tracking-wide">100%</p>
+                                        <p class="text-base text-gray-200">Esterilización</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-3xl text-primary font-bold tracking-wide">3D</p>
+                                        <p class="text-base text-gray-200">Imagen Digital</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-3xl text-primary font-bold tracking-wide">24/7</p>
+                                        <p class="text-base text-gray-200">Urgencias</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mx-auto text-center py-16">
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Testimonios</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-[#1e293b] mt-2 mb-3">
+                Historias que <span class="text-primary">nos inspiran</span>
+            </h2>
+            <p class="text-gray-500 text-sm md:text-base max-w-md mx-auto mb-12">Lo que nuestros pacientes dicen sobre su experiencia.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-shadow duration-300 text-left flex flex-col justify-between border border-gray-100 min-h-[380px]">
+                    <div>
+                        <img class="size-10" src={gruion.src} alt="" />
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                        </div>
+                        <p class="text-[#64748b] leading-relaxed font-light text-[15px]">"El equipo de Lumina transformó mi sonrisa por completo. La atención fue impecable de principio a fin, me sentí cuidada en cada visita."</p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-gray-100">
+                        <h4 class="font-bold text-[#1e293b] text-sm">María González</h4>
+                        <span class="text-xs text-gray-400">Paciente de ortodoncia</span>
+                    </div>
+                </div>
+
+                <div class="bg-[#192639] rounded-2xl p-8 shadow-xl text-left flex flex-col justify-between min-h-[400px] transform md:scale-105 z-10">
+                    <div>
+                        <img class="size-10" src={gruion.src} alt="" />
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 leading-relaxed font-light text-[15px]">"El equipo de Lumina transformó mi sonrisa por completo. La atención fue impecable de principio a fin, me sentí cuidada en cada visita."</p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-[#2d3d54]">
+                        <h4 class="font-bold text-white text-sm">María González</h4>
+                        <span class="text-xs text-slate-400">Paciente de ortodoncia</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-lg transition-shadow duration-300 text-left flex flex-col justify-between border border-gray-100 min-h-[380px]">
+                    <div>
+                        <img class="size-10" src={gruion.src} alt="" />
+                        <div class="text-primary text-4xl mb-4">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#EFBF04" stroke="#EFBF04" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star-icon lucide-star"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                        </div>
+                        <p class="text-[#64748b] leading-relaxed font-light text-[15px]">"El equipo de Lumina transformó mi sonrisa por completo. La atención fue impecable de principio a fin, me sentí cuidada en cada visita."</p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-gray-100">
+                        <h4 class="font-bold text-[#1e293b] text-sm">María González</h4>
+                        <span class="text-xs text-gray-400">Paciente de ortodoncia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="w-full bg-amber-50 py-16">
+            <div class="container">
+                <p class="text-primary text-center">Contacto</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#1e293b] mt-2 mb-3 text-center">
+                    Estamos aquí <span class="text-primary">para ayudarte</span>
+                </h2>
+                <p class="text-gray-500 text-sm md:text-base max-w-md mx-auto mb-12">Lo que nuestros pacientes dicen sobre su experiencia.</p>
+                <div class="flex items-center justify-evenly gap-5 flex-wrap">
+                    <div class="grow w-50 flex items-center justify-center flex-col gap-3 shadow rounded-4xl p-5">
+                        <div class="p-3 bg-primary inline-block rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-lg font-semibold text-slate-700">Visitanos</h4>
+                            <p class="text-slate-500 text-base text-balance">Edificio Empresarial Amauta, Chachacomayoc, Cusco 08000</p>
+                        </div>
+                    </div>
+                    <div class="grow w-50 flex items-center justify-center flex-col gap-3 shadow rounded-4xl p-5">
+                        <div class="p-3 bg-primary inline-block rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"></path></svg>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-lg font-semibold text-slate-700">Llamanos</h4>
+                            <p class="text-slate-500 text-base text-balance">+51 940 897 605</p>
+                            <p class="text-slate-500 text-base text-balance">+51 987 654 321</p>
+                        </div>
+                    </div>
+                    <div class="grow w-50 flex items-center justify-center flex-col gap-3 shadow rounded-4xl p-5">
+                        <div class="p-3 bg-primary inline-block rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-lg font-semibold text-slate-700">Escribenos</h4>
+                            <p class="text-slate-500 text-base text-balance">info@dentalis.com</p>
+                            <p class="text-slate-500 text-base text-balance">reservar@dentalis.com</p>
+                        </div>
+                    </div>
+                    <div class="grow w-50 flex items-center justify-center flex-col gap-3 shadow rounded-4xl p-5">
+                        <div class="p-3 bg-primary inline-block rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6h4"></path></svg>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-lg font-semibold text-slate-700">Encuentranos</h4>
+                            <p class="text-slate-500 text-base text-balance">De lunes a viernes de 9:00 a 13:00 y de 15:00 a 19:30.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-10">
+                    <iframe class="rounded-3xl" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d15516.939029171297!2d-71.95572084794847!3d-13.521179784546117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x916dd526c9678015%3A0xf75d4c55df6931d6!2sDENTALIS%20-%20Dental%20Group%2C%20Edificio%20Empresarial%20Amauta%2C%20Chachacomayoc%2C%20Cusco%2008000!3m2!1d-13.522703!2d-71.9629226!5e0!3m2!1ses!2spe!4v1779404758097!5m2!1ses!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
-
-
-
