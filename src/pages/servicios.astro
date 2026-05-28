@@ -1,11 +1,300 @@
 ---
-import Layout from "../layouts/Layout.astro";
-
-
+import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-    <div>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae alias maxime sapiente dolore quaerat consectetur, ratione perspiciatis. Deleniti earum magni sint ratione minus delectus? Quaerat pariatur facilis sed dolorum magni.
+    <section class="min-h-screen flex flex-col items-center justify-center text-center px-8 pt-32 pb-20 relative overflow-hidden bg-[#192639]" style="background: radial-gradient(ellipse 70% 50% at 50% -10%, rgba(202,151,43,0.14) 0%, transparent 65%), radial-gradient(ellipse 40% 30% at 85% 85%, rgba(202,151,43,0.07) 0%, transparent 60%), #192639;">
+        <div class="w-px h-20 mx-auto mb-10 bg-gradient-to-b from-transparent via-[#ca972b] to-transparent"></div>
+        <p class="text-[10px] font-medium tracking-[0.35em] uppercase text-[#ca972b] mb-6">Excelencia en Odontología</p>
+        <h1 class="font-light text-white leading-[1.02] tracking-tight mb-6 text-3xl md:text-8xl">
+            Nuestros<br /><span class="text-[#ca972b]">Procedimientos</span>
+        </h1>
+        <p class="text-[0.95rem] font-light text-white/45 max-w-md leading-loose mb-12">Tratamientos especializados para restaurar, embellecer y preservar tu salud bucal con tecnología de vanguardia.</p>
+        <a href="#servicios" class="inline-flex items-center gap-2.5 px-10 py-3.5 bg-[#ca972b] text-[#192639] text-[12px] font-semibold tracking-[0.15em] uppercase no-underline hover:bg-[#e5b84a] hover:-translate-y-0.5 transition-all duration-300">
+            Explorar servicios
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="bg-[#ca972b] flex justify-center gap-16 flex-wrap px-8 py-6">
+        <div class="text-center text-[#192639]">
+            <strong class="block text-[2.2rem] font-semibold leading-none">+12</strong>
+            <span class="text-[10px] font-semibold tracking-[0.18em] uppercase opacity-70">Años de experiencia</span>
+        </div>
+        <div class="text-center text-[#192639]">
+            <strong class="block text-[2.2rem] font-semibold leading-none">8</strong>
+            <span class="text-[10px] font-semibold tracking-[0.18em] uppercase opacity-70">Especialidades</span>
+        </div>
+        <div class="text-center text-[#192639]">
+            <strong class="block text-[2.2rem] font-semibold leading-none">100%</strong>
+            <span class="text-[10px] font-semibold tracking-[0.18em] uppercase opacity-70">Atención personalizada</span>
+        </div>
+        <div class="text-center text-[#192639]">
+            <strong class="block text-[2.2rem] font-semibold leading-none">Última</strong>
+            <span class="text-[10px] font-semibold tracking-[0.18em] uppercase opacity-70">Tecnología dental</span>
+        </div>
     </div>
+
+    <!-- INTRO -->
+    <section class="bg-[#faf9f7] py-24 px-8 text-center">
+        <div class="max-w-xl mx-auto">
+            <span class="inline-block text-[10px] font-semibold tracking-[0.3em] uppercase text-[#ca972b] border border-[#ca972b] px-4 py-1.5 mb-6">Especialidades clínicas</span>
+            <h2 class="font-light text-[#192639] leading-tight mb-5 text-4xl md:text-5xl">
+                Cuidado integral<br />para tu <span class="text-[#ca972b]">sonrisa perfecta</span>
+            </h2>
+            <p class="text-[0.9rem] font-light text-[#7a6f63] leading-loose">Cada tratamiento es diseñado a medida, combinando precisión científica con una visión estética que transforma no solo tu boca, sino toda tu confianza.</p>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <div id="servicios">
+        <!-- 01 PERIODONCIA — img izq / texto der / fondo blanco -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+            <div class="relative overflow-hidden min-h-[360px] md:min-h-0 group">
+                <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e66?w=900&q=80&fit=crop" alt="Periodoncia" class="w-full h-full object-cover absolute inset-0 transition-transform duration-[6000ms] group-hover:scale-105" />
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(25,38,57,0.35), rgba(25,38,57,0.05));"></div>
+                <span class="absolute bottom-8 right-8 font-light leading-none select-none text-[5rem] text-white/20">01</span>
+            </div>
+            <div class="bg-white flex flex-col justify-center px-12 py-20">
+                <span class="inline-block text-[10px] font-semibold tracking-[0.3em] uppercase text-[#ca972b] border border-[#ca972b] px-3 py-1 mb-5 w-fit">Periodoncia</span>
+                <h3 class="font-light text-[#192639] leading-tight mb-5 text-4xl">
+                    Salud y <span class="text-[#ca972b]">fortaleza</span><br />en tus encías
+                </h3>
+                <div class="w-12 h-px bg-[#ca972b]/40 mb-6"></div>
+                <p class="text-[0.875rem] font-light text-[#7a6f63] leading-loose mb-5">La periodoncia se especializa en el diagnóstico, tratamiento y prevención de enfermedades que afectan los tejidos de soporte dental. Cuidamos encías, hueso alveolar y ligamento periodontal para garantizar una base sólida para tu sonrisa.</p>
+                <ul class="list-none mb-8">
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Tratamiento de gingivitis y periodontitis</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Cirugía plástica periodontal</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Alargamiento de coronas clínicas</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5"><span class="text-[#ca972b] text-xs">—</span>Regeneración ósea guiada</li>
+                </ul>
+                <a href="#" class="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#ca972b] no-underline hover:gap-4 transition-all duration-300">
+                    Agendar consulta
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- 02 ESTÉTICA DENTAL — img der / texto izq / fondo navy -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+            <div class="bg-[#223348] flex flex-col justify-center px-12 py-20 order-2 md:order-1">
+                <span class="inline-block text-[10px] font-semibold tracking-[0.3em] uppercase text-[#ca972b] border border-[#ca972b]/40 px-3 py-1 mb-5 w-fit">Estética Dental</span>
+                <h3 class="font-light text-white leading-tight mb-5 text-4xl">
+                    La belleza de una<br />sonrisa <span class="text-[#ca972b]">radiante</span>
+                </h3>
+                <div class="w-12 h-px bg-[#ca972b]/30 mb-6"></div>
+                <p class="text-[0.875rem] font-light text-white/50 leading-loose mb-5">Transformamos la apariencia de tus dientes corrigiendo color, forma y tamaño con los tratamientos más avanzados en odontología estética. Resultados naturales que reflejan tu personalidad.</p>
+                <ul class="list-none mb-8">
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Blanqueamiento dental profesional</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Carillas de porcelana ultra delgadas</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Reconstrucción con composite</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5"><span class="text-[#ca972b] text-xs">—</span>Contorneado y remodelado dental</li>
+                </ul>
+                <a href="#" class="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#ca972b] no-underline hover:gap-4 transition-all duration-300">
+                    Agendar consulta
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+            <div class="relative overflow-hidden min-h-[360px] md:min-h-0 order-1 md:order-2 group">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffedeb76b2e?w=900&q=80&fit=crop" alt="Estética Dental" class="w-full h-full object-cover absolute inset-0 transition-transform duration-[6000ms] group-hover:scale-105" />
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(25,38,57,0.35), rgba(25,38,57,0.05));"></div>
+                <span class="absolute bottom-8 right-8 font-light leading-none select-none text-[5rem] text-white/20">02</span>
+            </div>
+        </div>
+
+        <!-- 03 DISEÑO DE SONRISA — img izq / texto der / fondo blanco -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+            <div class="relative overflow-hidden min-h-[360px] md:min-h-0 group">
+                <img src="https://images.unsplash.com/photo-1598256989900-c2a70a93c0d8?w=900&q=80&fit=crop" alt="Diseño de Sonrisa" class="w-full h-full object-cover absolute inset-0 transition-transform duration-[6000ms] group-hover:scale-105" />
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(25,38,57,0.35), rgba(25,38,57,0.05));"></div>
+                <span class="absolute bottom-8 right-8 font-light leading-none select-none text-[5rem] text-white/20">03</span>
+            </div>
+            <div class="bg-white flex flex-col justify-center px-12 py-20">
+                <span class="inline-block text-[10px] font-semibold tracking-[0.3em] uppercase text-[#ca972b] border border-[#ca972b] px-3 py-1 mb-5 w-fit">Diseño de Sonrisa</span>
+                <h3 class="font-light text-[#192639] leading-tight mb-5 text-4xl">
+                    Tu sonrisa<br />como obra de <span class="text-[#ca972b]">arte</span>
+                </h3>
+                <div class="w-12 h-px bg-[#ca972b]/40 mb-6"></div>
+                <p class="text-[0.875rem] font-light text-[#7a6f63] leading-loose mb-5">Planificamos tu sonrisa de forma integral, armonizando cada detalle con tu rostro: forma, color, tamaño y posición. Tecnología digital para que veas el resultado antes de comenzar.</p>
+                <ul class="list-none mb-8">
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Análisis facial y dental digital</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Simulación de resultado previo</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Carillas, coronas y blanqueamiento combinados</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5"><span class="text-[#ca972b] text-xs">—</span>Cirugía estética en encías</li>
+                </ul>
+                <a href="#" class="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#ca972b] no-underline hover:gap-4 transition-all duration-300">
+                    Agendar consulta
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- 04 REHABILITACIÓN ORAL — img der / texto izq / fondo navy -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+            <div class="bg-[#223348] flex flex-col justify-center px-12 py-20 order-2 md:order-1">
+                <span class="inline-block text-[10px] font-semibold tracking-[0.3em] uppercase text-[#ca972b] border border-[#ca972b]/40 px-3 py-1 mb-5 w-fit">Rehabilitación Oral</span>
+                <h3 class="font-light text-white leading-tight mb-5 text-4xl">
+                    Restauramos tu<br />función <span class="text-[#ca972b]">completa</span>
+                </h3>
+                <div class="w-12 h-px bg-[#ca972b]/30 mb-6"></div>
+                <p class="text-[0.875rem] font-light text-white/50 leading-loose mb-5">Devolvemos salud, función y estética a tu boca mediante un enfoque integral. Tratamos dientes dañados, problemas de mordida, mandíbula y articulaciones temporomandibulares.</p>
+                <ul class="list-none mb-8">
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Coronas y puentes cerámicos</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Prótesis fijas y removibles</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Tratamiento de bruxismo</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5"><span class="text-[#ca972b] text-xs">—</span>Rehabilitación de ATM</li>
+                </ul>
+                <a href="#" class="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#ca972b] no-underline hover:gap-4 transition-all duration-300">
+                    Agendar consulta
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+            <div class="relative overflow-hidden min-h-[360px] md:min-h-0 order-1 md:order-2 group">
+                <img src="https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=900&q=80&fit=crop" alt="Rehabilitación Oral" class="w-full h-full object-cover absolute inset-0 transition-transform duration-[6000ms] group-hover:scale-105" />
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(25,38,57,0.35), rgba(25,38,57,0.05));"></div>
+                <span class="absolute bottom-8 right-8 font-light leading-none select-none text-[5rem] text-white/20">04</span>
+            </div>
+        </div>
+
+        <!-- 05 ORTODONCIA — img izq / texto der / fondo blanco -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+            <div class="relative overflow-hidden min-h-[360px] md:min-h-0 group">
+                <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?w=900&q=80&fit=crop" alt="Ortodoncia" class="w-full h-full object-cover absolute inset-0 transition-transform duration-[6000ms] group-hover:scale-105" />
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(25,38,57,0.35), rgba(25,38,57,0.05));"></div>
+                <span class="absolute bottom-8 right-8 font-light leading-none select-none text-[5rem] text-white/20">05</span>
+            </div>
+            <div class="bg-white flex flex-col justify-center px-12 py-20">
+                <span class="inline-block text-[10px] font-semibold tracking-[0.3em] uppercase text-[#ca972b] border border-[#ca972b] px-3 py-1 mb-5 w-fit">Ortodoncia</span>
+                <h3 class="font-light text-[#192639] leading-tight mb-5 text-4xl">
+                    Alineación perfecta,<br />sonrisa <span class="text-[#ca972b]">armoniosa</span>
+                </h3>
+                <div class="w-12 h-px bg-[#ca972b]/40 mb-6"></div>
+                <p class="text-[0.875rem] font-light text-[#7a6f63] leading-loose mb-5">Corregimos la posición de dientes y huesos maxilares para lograr una mordida adecuada y alineación ideal, mejorando función oral y estética facial con tratamientos modernos y cómodos.</p>
+                <ul class="list-none mb-8">
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Brackets metálicos y cerámicos</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Ortodoncia invisible (alineadores)</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Ortodoncia lingual</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5"><span class="text-[#ca972b] text-xs">—</span>Retención y contención post-tratamiento</li>
+                </ul>
+                <a href="#" class="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#ca972b] no-underline hover:gap-4 transition-all duration-300">
+                    Agendar consulta
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- 06 ODONTOPEDIATRÍA — img der / texto izq / fondo navy -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+            <div class="bg-[#223348] flex flex-col justify-center px-12 py-20 order-2 md:order-1">
+                <span class="inline-block text-[10px] font-semibold tracking-[0.3em] uppercase text-[#ca972b] border border-[#ca972b]/40 px-3 py-1 mb-5 w-fit">Odontopediatría</span>
+                <h3 class="font-light text-white leading-tight mb-5 text-4xl">
+                    Sonrisas sanas<br />desde la <span class="text-[#ca972b]">infancia</span>
+                </h3>
+                <div class="w-12 h-px bg-[#ca972b]/30 mb-6"></div>
+                <p class="text-[0.875rem] font-light text-white/50 leading-loose mb-5">Atención dental especializada para niños desde el nacimiento hasta la adolescencia, en un ambiente amigable que desarrolla hábitos de higiene bucal saludables desde temprana edad.</p>
+                <ul class="list-none mb-8">
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Primera visita dental y seguimiento</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Sellantes y fluorización preventiva</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Tratamiento de caries infantil</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5"><span class="text-[#ca972b] text-xs">—</span>Ortopedia maxilar temprana</li>
+                </ul>
+                <a href="#" class="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#ca972b] no-underline hover:gap-4 transition-all duration-300">
+                    Agendar consulta
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+            <div class="relative overflow-hidden min-h-[360px] md:min-h-0 order-1 md:order-2 group">
+                <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?w=900&q=80&fit=crop" alt="Odontopediatría" class="w-full h-full object-cover absolute inset-0 transition-transform duration-[6000ms] group-hover:scale-105" />
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(25,38,57,0.35), rgba(25,38,57,0.05));"></div>
+                <span class="absolute bottom-8 right-8 font-light leading-none select-none text-[5rem] text-white/20">06</span>
+            </div>
+        </div>
+
+        <!-- 07 ARMONIZACIÓN OROFACIAL — img izq / texto der / fondo blanco -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+            <div class="relative overflow-hidden min-h-[360px] md:min-h-0 group">
+                <img src="https://images.unsplash.com/photo-1619451334792-150fd785ee74?w=900&q=80&fit=crop" alt="Armonización Orofacial" class="w-full h-full object-cover absolute inset-0 transition-transform duration-[6000ms] group-hover:scale-105" />
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(25,38,57,0.35), rgba(25,38,57,0.05));"></div>
+                <span class="absolute bottom-8 right-8 font-light leading-none select-none text-[5rem] text-white/20">07</span>
+            </div>
+            <div class="bg-white flex flex-col justify-center px-12 py-20">
+                <span class="inline-block text-[10px] font-semibold tracking-[0.3em] uppercase text-[#ca972b] border border-[#ca972b] px-3 py-1 mb-5 w-fit">Armonización Orofacial</span>
+                <h3 class="font-light text-[#192639] leading-tight mb-5 text-4xl">
+                    Equilibrio y <span class="text-[#ca972b]">belleza</span><br />facial total
+                </h3>
+                <div class="w-12 h-px bg-[#ca972b]/40 mb-6"></div>
+                <p class="text-[0.875rem] font-light text-[#7a6f63] leading-loose mb-5">Técnicas estéticas mínimamente invasivas que mejoran la apariencia y función facial, rejuveneciendo el rostro y potenciando los resultados de tus tratamientos dentales.</p>
+                <ul class="list-none mb-8">
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Ácido hialurónico para volumen labial</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Toxina botulínica anti-expresión</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Hilos tensores faciales</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-[#6b6259] py-2.5"><span class="text-[#ca972b] text-xs">—</span>Rinomodelación no quirúrgica</li>
+                </ul>
+                <a href="#" class="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#ca972b] no-underline hover:gap-4 transition-all duration-300">
+                    Agendar consulta
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- 08 IMPLANTOLOGÍA — img der / texto izq / fondo navy -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[600px]">
+            <div class="bg-[#223348] flex flex-col justify-center px-12 py-20 order-2 md:order-1">
+                <span class="inline-block text-[10px] font-semibold tracking-[0.3em] uppercase text-[#ca972b] border border-[#ca972b]/40 px-3 py-1 mb-5 w-fit">Implantología</span>
+                <h3 class="font-light text-white leading-tight mb-5 text-4xl">
+                    Dientes permanentes,<br />sonrisa <span class="text-[#ca972b]">eterna</span>
+                </h3>
+                <div class="w-12 h-px bg-[#ca972b]/30 mb-6"></div>
+                <p class="text-[0.875rem] font-light text-white/50 leading-loose mb-5">Reemplazamos dientes perdidos con implantes de titanio que se integran al hueso maxilar. La solución más duradera y estética para recuperar tu dentadura completa de aspecto natural.</p>
+                <ul class="list-none mb-8">
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Implantes unitarios y múltiples</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>Implantes inmediatos post-extracción</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5 border-b border-[#ca972b]/15"><span class="text-[#ca972b] text-xs">—</span>All-on-4 y All-on-6</li>
+                    <li class="flex items-center gap-2.5 text-[0.82rem] text-white/50 py-2.5"><span class="text-[#ca972b] text-xs">—</span>Regeneración ósea previa al implante</li>
+                </ul>
+                <a href="#" class="inline-flex items-center gap-2 text-[11px] font-semibold tracking-[0.18em] uppercase text-[#ca972b] no-underline hover:gap-4 transition-all duration-300">
+                    Agendar consulta
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+            <div class="relative overflow-hidden min-h-[360px] md:min-h-0 order-1 md:order-2 group">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=900&q=80&fit=crop" alt="Implantología" class="w-full h-full object-cover absolute inset-0 transition-transform duration-[6000ms] group-hover:scale-105" />
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(25,38,57,0.35), rgba(25,38,57,0.05));"></div>
+                <span class="absolute bottom-8 right-8 font-light leading-none select-none text-[5rem] text-white/20">08</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="bg-white py-28 px-8 text-center relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-[#ca972b] to-transparent"></div>
+        <h2 class="font-light text-[#223348] mb-4 text-5xl md:text-6xl">
+            Comienza tu<br /><span class="text-[#ca972b]">transformación</span> hoy
+        </h2>
+        <p class="text-[0.9rem] font-light text-black/45 max-w-md mx-auto leading-loose mb-10">Reserva tu consulta y descubre el tratamiento ideal para ti. Más de 12 años de experiencia respaldan cada sonrisa que creamos.</p>
+        <div class="flex gap-4 justify-center flex-wrap">
+            <a href="#" class="inline-flex items-center gap-2.5 px-10 py-3.5 bg-[#ca972b] text-[#192639] text-[12px] font-semibold tracking-[0.15em] uppercase no-underline hover:bg-[#e5b84a] hover:-translate-y-0.5 transition-all duration-300">
+                Reservar cita
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#" class="inline-flex items-center gap-2 px-9 py-3.5 border border-[#ca972b]/50 text-black/70 text-[12px] font-medium tracking-[0.15em] uppercase no-underline hover:border-[#ca972b] hover:text-[#ca972b] transition-all duration-300"> Ver casos de éxito </a>
+        </div>
+    </section>
+
+    <script>
+        const els = document.querySelectorAll('.reveal,.reveal-l,.reveal-r');
+        const io = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((e) => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('in');
+                        io.unobserve(e.target);
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+        els.forEach((el) => io.observe(el));
+    </script>
 </Layout>

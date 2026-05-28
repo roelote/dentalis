@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html{
+  overflow-x: hidden
+}
+
 @layer components {
   .container {
     @apply mx-auto px-5;
